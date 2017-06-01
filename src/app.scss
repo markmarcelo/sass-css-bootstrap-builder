@@ -1,0 +1,19 @@
+@import './bootstrap/customizations.scss';
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+
+    padding-top: 70px;
+
+    h1 {
+        width: $section-width;
+        background-color: $code-color;
+    }
+
+    h2 {
+		color: $brand-info;
+    }
+}
