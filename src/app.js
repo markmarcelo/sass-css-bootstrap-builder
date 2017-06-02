@@ -1,3 +1,5 @@
 import css from './app.scss';
 
-console.log('test');
+if (process.env.NODE_ENV !== 'production') {
+  require('file-loader!./index.ejs');
+}

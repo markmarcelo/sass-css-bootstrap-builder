@@ -70,16 +70,19 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    hot: true,
-    open: true,
-    stats: 'errors-only',
+    compress: true, // gzip
+    hot: true, // hot module replacement
+    open: true, // open window
+    stats: 'errors-only', // less info in terminal log
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Project Demo',
       hash: true,
-      template: './src/index.html',
+      template: './src/index.ejs',
+      // minify: {
+      //   collapseWhitespace: true,
+      // },
     }),
     new ExtractTextPlugin({
       filename: '/css/[name].css',
