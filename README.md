@@ -1,6 +1,6 @@
 # CSS-SASS Bootstrap Builder
 
-A Webpack developement environment for compiling production CSS and JavaScript using Hot Module Replacement (HMR), SASS, the Twitter Bootstrap library, Pug, PurifyCSS, and more.
+A Webpack developement environment for removing unused CSS and compiling production JavaScript using Hot Module Replacement (HMR), Purifycss, SASS, the Twitter Bootstrap library. Templates can be written in HTML, Jade/Pug, or EJS.
 
 ## How to begin?
 
